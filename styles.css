@@ -18,16 +18,13 @@ span {
 h1 {
     text-align: center;
     width: 1024px;
-    padding: 13px;
+    padding: 18px;
     background: rgb(164, 37, 46);
     color: rgb(223, 215, 216);
     font-family: 'Kenzo', sans-serif;
-    margin: 0;
     border-radius: 5px;
     font-size: 25px;
     letter-spacing: 2px;
-
-    
 }
 
 .container-flexbox {
@@ -37,9 +34,6 @@ h1 {
     margin: 10px;
     flex-wrap: wrap;
     gap: 15px;
-    
-    
-    
 }
 
 .cards-flexbox {
@@ -51,6 +45,7 @@ h1 {
     justify-content: space-between;
     position: relative;
     top: 73px;
+    
 }
 
 .image-card {
@@ -77,5 +72,5 @@ h1 {
     color: rgb(223, 215, 216);
     font-size: 23px;
     letter-spacing: 2px;
-    
 }
+
