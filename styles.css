@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: auto;
+    text-align: center;
+}
+
 span {
     position: fixed;
     z-index: 1;
@@ -13,13 +18,15 @@ span {
 h1 {
     text-align: center;
     width: 1024px;
-    padding: 20px;
+    padding: 13px;
     background: rgb(164, 37, 46);
     color: rgb(223, 215, 216);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Kenzo', sans-serif;
     margin: 0;
     border-radius: 5px;
     font-size: 25px;
+    letter-spacing: 2px;
+
     
 }
 
@@ -30,6 +37,7 @@ h1 {
     margin: 10px;
     flex-wrap: wrap;
     gap: 15px;
+    
     
     
 }
@@ -65,8 +73,9 @@ h1 {
     width: 100%;
     text-align: center;
     padding: 13px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Kenzo', sans-serif;
     color: rgb(223, 215, 216);
     font-size: 23px;
+    letter-spacing: 2px;
     
 }
