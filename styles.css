@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    text-align: center;
+}
+
+span {
+    position: fixed;
+    z-index: 1;
+    max-width: 1024px;
+}
+
+h1 {
+    text-align: center;
+    width: 1024px;
+    padding: 18px;
+    background: rgb(164, 37, 46);
+    color: rgb(223, 215, 216);
+    font-family: 'Kenzo', sans-serif;
+    border-radius: 5px;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.container-flexbox {
+    max-width: 1024px;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cards-flexbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 325px;
+    height: auto;
+    justify-content: space-between;
+    position: relative;
+    top: 73px;
+    
+}
+
+.image-card {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.cards-flexbox::before {
+    content: "";
+    position: absolute;
+    opacity: 0.4;
+    background-image: url("https://http2.mlstatic.com/D_NQ_NP_901145-MLB70172824522_062023-O.webp");
+    z-index: -1;
+    inset: 0;
+}
+
+.text {
+    background-color: rgb(29, 59, 118);
+    width: 100%;
+    text-align: center;
+    padding: 13px;
+    font-family: 'Kenzo', sans-serif;
+    color: rgb(223, 215, 216);
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+
