@@ -1,1 +1,1 @@
-# Cards creation project using flexbox and css grid.
+# Cards creation project using flexbox css.
