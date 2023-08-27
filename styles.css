@@ -5,8 +5,8 @@
 }
 
 body {
-    margin: auto;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 span {
@@ -36,20 +36,21 @@ h1 {
     flex-wrap: wrap;
     gap: 15px;
     position: relative;
+    width: 100%;
+    height: 630px;
 }
 
 .container-flexbox::before {
     content: "";
-    display: block;
     position: absolute;
     z-index: -1;
     opacity: 0.4;
     background-image: url("https://pbs.twimg.com/media/FERQAULWQAQ_nwj.jpg:large");
     background-repeat: no-repeat;
-    background-position: 50% 0;
     background-size: cover;
     inset: 0;
-    height: 100vh;
+    height: 80vh;
+    
 }
 
 .cards-flexbox {
@@ -57,7 +58,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     width: 331px;
-    height: auto;
+    height: 482px;
     justify-content: space-between;
     position: relative;
     top: 73px;
@@ -70,15 +71,6 @@ h1 {
     object-fit: cover;
 }
 
-.cards-flexbox::before {
-    content: "";
-    position: absolute;
-    opacity: 0.4;
-    background-image: url("https://http2.mlstatic.com/D_NQ_NP_901145-MLB70172824522_062023-O.webp");
-    z-index: -1;
-    inset: 0;
-}
-
 .text {
     background-color: rgb(29, 59, 118);
     width: 100%;
@@ -88,5 +80,22 @@ h1 {
     color: rgb(223, 215, 216);
     font-size: 23px;
     letter-spacing: 2px;
+}
+
+@media (max-width: 1024px) {
+    .container-flexbox::before {
+        display: none;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .cards-flexbox::before {
+        content: "";
+        position: absolute;
+        opacity: 0.4;
+        background-image: url("https://http2.mlstatic.com/D_NQ_NP_901145-MLB70172824522_062023-O.webp");
+        z-index: -1;
+        inset: 0;
+    }
 }
 
